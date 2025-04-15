@@ -16,8 +16,10 @@ class MarqueFactory extends Factory
      */
     public function definition(): array
     {
+        $marques = ['Chiquita', 'Dole', 'Del Monte', 'Sunkist'];
         return [
-            //
+            'marque' => fake()->unique()->randomElement($marques),
+            'photo' => fake()->randomElement(['apple.jpg', 'samsung.jpg', 'nike.jpg']),
         ];
     }
 }

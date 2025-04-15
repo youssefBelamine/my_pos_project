@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class ModeReglement extends Model
 {
+    protected $guarded = ["id"];
     use HasFactory;
 }

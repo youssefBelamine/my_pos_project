@@ -14,5 +14,35 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('dashboard');
 });
+
+
+// php artisan make:livewire Famille
+// php artisan make:livewire Marque
+// php artisan make:livewire Unite
+// php artisan make:livewire Article
+// php artisan make:livewire ModeReglement
+// php artisan make:livewire Client
+// php artisan make:livewire Reglement
+// php artisan make:livewire Commande
+// php artisan make:livewire DetailBl
+
+
+// php artisan make:livewire Famille
+// php artisan make:livewire Marque
+// php artisan make:livewire Unite
+// php artisan make:livewire Article
+// php artisan make:livewire Reglement
+// php artisan make:livewire Client
+// php artisan make:livewire Commande
+// php artisan make:livewire DetailBl
+// php artisan make:livewire ModeReglement
+
+// php artisan make:livewire FamilleList
+// php artisan make:livewire MarqueList
+// php artisan make:livewire UniteList
+// php artisan make:livewire ArticleList
+// php artisan make:livewire ClientList
+// php artisan make:livewire CommandeList
+// php artisan make:livewire ModeReglementList

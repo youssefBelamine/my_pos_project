@@ -16,8 +16,9 @@ class UniteFactory extends Factory
      */
     public function definition(): array
     {
+        $unites = ['kg', 'l', 'm', 'piece', 'box'];
         return [
-            //
+            'unite' => fake()->unique()->randomElement($unites),
         ];
     }
 }

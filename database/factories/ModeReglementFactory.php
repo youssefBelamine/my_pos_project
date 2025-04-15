@@ -16,8 +16,10 @@ class ModeReglementFactory extends Factory
      */
     public function definition(): array
     {
+        $modes = ['Cash', 'Check', 'Credit card', 'Bank transfer'];
+
         return [
-            //
+            'mode_reglement' => fake()->unique()->randomElement($modes),
         ];
     }
 }

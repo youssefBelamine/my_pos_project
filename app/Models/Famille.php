@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Famille extends Model
 {
+    protected $guarded = ["id"];
     use HasFactory;
 }
