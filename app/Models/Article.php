@@ -9,4 +9,10 @@ class Article extends Model
 {
     protected $guarded = ["id"];
     use HasFactory;
+
+    // public function ttc()
+    // {
+    //     return $this->prix_ht*$this->tva;
+    // }
+
 }

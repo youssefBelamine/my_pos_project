@@ -103,7 +103,7 @@ class DatabaseSeeder extends Seeder
                     'designation' => $articleName,
                     'prix_ht' => fake()->randomFloat(2, 5, 100),
                     'tva' => fake()->randomElement([5.5, 10, 20]),
-                    'stock' => fake()->numberBetween(10, 100),
+                    'stock' => fake()->numberBetween(0, 100),
                     'photo' => strtolower(str_replace(' ', '_', $articleName)) . '.jpg', // Photo name based on article name
                     'code_barre' => fake()->unique()->ean13(),
                     'famille_id' => $famille->id,

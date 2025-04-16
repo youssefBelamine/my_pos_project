@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -46,3 +47,8 @@ Route::get('/', function () {
 // php artisan make:livewire ClientList
 // php artisan make:livewire CommandeList
 // php artisan make:livewire ModeReglementList
+
+
+Route::get("/img", function() {
+    DB::table("");
+});
